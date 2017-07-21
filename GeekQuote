@@ -1,0 +1,9 @@
+#!/usr/bin/python
+# -*- coding: iso-8859-15 -*-
+
+def getQuote():
+    import random
+    from quoteDatabase import quoteDatabase
+    quote, quoter = random.choice(list(quoteDatabase.items()))
+    returnQuote = "'" + quote + "'" + " - " + quoter
+    return returnQuote
